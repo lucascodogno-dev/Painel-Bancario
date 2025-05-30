@@ -1,0 +1,208 @@
+/* Global Styles */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced elevation shadows */
+.v-card[class*='elevation-'] {
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+/* Enhanced backdrop blur for overlays */
+.v-overlay__scrim {
+  backdrop-filter: blur(4px);
+}
+
+/* Enhanced menu styles */
+.v-menu > .v-overlay__content {
+  background: rgba(15, 15, 35, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* Dark theme adjustments */
+.theme--dark .v-text-field input {
+  color: white !important;
+}
+
+.theme--dark .v-text-field label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.theme--dark .v-select .v-select__selection {
+  color: white !important;
+}
+
+/* Enhanced ripple effects */
+.v-ripple__container {
+  opacity: 0.12;
+}
+
+/* Custom divider styles */
+.v-divider {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Enhanced tab styles */
+.v-tabs {
+  background: transparent !important;
+}
+
+.v-tab {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.v-tab--selected {
+  color: #667eea !important;
+}
+
+/* Loading overlay customization */
+.v-overlay--absolute {
+  backdrop-filter: blur(2px);
+}
+
+/* Enhanced tooltip styles */
+.v-tooltip > .v-overlay__content {
+  background: rgba(15, 15, 35, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Custom focus states */
+.v-btn:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Progress indicators */
+.v-progress-circular {
+  color: #667eea !important;
+}
+
+/* Chip animations */
+.v-chip {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-chip:hover {
+  transform: scale(1.05);
+}
+
+/* Button hover effects */
+.v-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Icon animations */
+.v-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-btn .v-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Avatar enhancements */
+.v-avatar {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Enhanced gradient backgrounds */
+.bg-gradient-success {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+.bg-gradient-error {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  .v-card-title {
+    font-size: 1.25rem !important;
+  }
+
+  .text-h3 {
+    font-size: 2rem !important;
+  }
+
+  .text-h4 {
+    font-size: 1.75rem !important;
+  }
+
+  .v-btn {
+    min-width: auto !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .v-container {
+    padding: 16px !important;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-dark-surface {
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .v-text-field .v-field,
+  .v-select .v-field {
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  }
+}
