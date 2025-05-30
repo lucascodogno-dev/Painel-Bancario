@@ -1,5 +1,7 @@
 # NextBank - Sistema Bancário Vue.js
 
+https://github.com/user-attachments/assets/679a1045-28e4-4da4-b312-9561539f058d
+
 ## 📁 Estrutura do Projeto
 
 ```
