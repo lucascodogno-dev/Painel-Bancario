@@ -348,6 +348,98 @@ Adicione/modifique animações no `global.css`:
 ## 📚 Recursos Adicionais
 
 - [Vue 3 Composition API](https://vuejs.org/guide/extras/composition-api-faq.html)
+
+***O'QUE EU FARIA SE TIVESSE MAIS TEMPO?***
+# 🚀 NextBank: Melhorias Futuras
+
+## 🏗️ **Arquitetura**
+
+### **Composables**
+- `useAuth()` - Centralizar lógica de autenticação
+- `useBankAccount()` - Gerenciar contas e saldos
+- `useTransactions()` - Filtros e histórico de transações
+- `useNotifications()` - Sistema de alertas
+
+### **Roteamento**
+- Vue Router para navegação real entre páginas
+- Guards de autenticação automáticos
+- Layouts diferentes por seção
+
+## 💰 **Funcionalidades Bancárias**
+
+### **Transferências Avançadas**
+- Transferência agendada (futuro)
+- Transferência recorrente (mensal/semanal)
+- Favoritos de destinatários
+- QR Code para PIX
+
+### **Gestão Financeira**
+- Categorização de gastos
+- Metas de economia
+- Relatórios mensais automáticos
+- Alertas de gastos altos
+
+## 🎨 **Interface**
+
+### **Dashboard Inteligente**
+- Gráficos de gastos por categoria
+- Timeline visual de transações
+- Widget de saldo projetado
+- Comparativo mensal
+
+### **Melhorias UX**
+- Dark/Light mode toggle
+- Busca inteligente de transações
+- Filtros salvos personalizados
+- Exportar extratos (PDF/Excel)
+
+## 🔒 **Segurança**
+
+### **Autenticação**
+- 2FA com Google Authenticator
+- Biometria (quando suportado)
+- Timeout de sessão configurável
+- Log de acessos
+
+### **Transações**
+- Confirmação por SMS/Email
+- Limite diário configurável
+- Bloqueio temporário de conta
+- Histórico de tentativas
+
+## 📱 **Experiência**
+
+### **Performance**
+- Cache inteligente de dados
+- Loading states em todas as ações
+- Infinite scroll no extrato
+- Offline mode básico
+
+### **Acessibilidade**
+- Suporte a screen readers
+- Navegação por teclado
+- Alto contraste
+- Textos redimensionáveis
+
+## 🔧 **Técnico**
+
+### **Qualidade**
+- Testes unitários (Vitest)
+- Testes E2E (Playwright)
+- ESLint + Prettier configurados
+- Husky para pre-commit hooks
+
+### **Deploy**
+- CI/CD automático
+- Ambientes dev/staging/prod
+- Monitoramento de erros (Sentry)
+- Analytics de uso
+
+---
+
+**Prioridade Alta:** Composables + Vue Router + Testes  
+**Prioridade Média:** Funcionalidades bancárias + Dashboard  
+**Prioridade Baixa:** PWA + Gamificação + Temas
 - [Vuetify 3 Documentation](https://vuetifyjs.com/)
 - [TypeScript Vue](https://vuejs.org/guide/typescript/overview.html)
 - [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro)
